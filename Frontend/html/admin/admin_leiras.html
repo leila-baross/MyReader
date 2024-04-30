@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leírások</title>
+  <link rel="icon" href="../../../images/Ybin.gif" type="image/x-icon">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="admin_leiras.css">
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="darkmode.js"></script>
+</head>
+<body onload="konyvLeirasok()" class="dark-mode" id="body">
+
+  <div class="container">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg barna border border-3 border-light text-white" id="menu">
+      <div class="container-fluid">
+        <a class="ms-4 me-2" href="#"><img src="../../images/Ybin.gif" class="gif"></a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="admin_kezdolap.html">Könyvek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Leírás</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search" id="searchingForm">
+            <input class="form-control me-2" type="search" placeholder="Keresés" aria-label="Search" name="searching">
+            <button class="btn btn-outline-light me-3" type="submit" style="border: none;">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <button class="me-2 btn btn-outline-light" style=" border: none;" name="dark_light"
+            onclick="toggleDarkLight()" title="Sötét/Világos mód">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+          </button>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <button id="logout" onclick="logout()" class="float-end ms-2 me-2 nav-link">
+              <i class="fa-solid fa-right-from-bracket"></i>
+            </button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- KÖNYVEK LEÍRÁSA  -->
+    <h1 class="mt-5 mb-5 lec text-center text-white barna border border-3 border-light pb-3">Leírás</h1>
+    <div class="row" id="reszletek">
+
+    </div>
+  </div>
+
+  <!-- Fel gomb -->
+  <div class="top">
+    <a href="#menu" class="btn btn-outline-danger p-3"><i class="fa-regular fa-hand-point-up"></i></a>
+  </div>
+
+  <script src="leirasok.js"></script> <!-- Könyv leírások -->
+  <script src="leirasKeresese.js"></script> <!-- Keresés a leírások között -->
+  <script src="logout.js"></script> <!-- Felhasználó kijelentkeztetése -->
+
+</body>
+</html>

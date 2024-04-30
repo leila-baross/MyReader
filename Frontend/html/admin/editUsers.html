@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="icon" href="../../../images/admin_favi.png" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="editUsers.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="sweetalert.css">
+</head>
+<body onload="getAllUser()">
+    <div class="container mt-5">
+        <!-- menu  -->
+        <nav class="navbar navbar-expand-sm rounded">
+            <div class="container-fluid">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="admin_kezdolap.html" class="nav-link btn ms-3">
+                            <i class="fa-solid fa-house-chimney"></i></i>
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search" id="searchingForm">
+                    <select name="searchType" id="searchType" class="form-select me-3">
+                        <option value="1" selected>e-mail</option>
+                        <option value="2">felhasználónév</option>
+                        <option value="3">szerepkör</option>
+                    </select>
+                    <input class="form-control me-2" type="search" placeholder="Keresés" aria-label="Search"
+                        name="searching">
+                    <button class="btn me-2" style="border: none;" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <button id="logout" onclick="logout()" style="border: none;" class="btn float-end me-3 mt-2 mb-2">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </button>
+            </div>
+        </nav>
+
+        <div class="table-responsive mt-5">
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Felhasználó azonosító</th>
+                        <th>E-mail</th>
+                        <th>Felhasználó</th>
+                        <th>Szerepkör</th>
+                        <th>Szerepkör szerkesztése</th>
+                        <th>Felhasználó törlése</th>
+                    </tr>
+                </thead>
+                <tbody id="users"> 
+                    <!-- A felhasználók kirajzoltatása -->
+                </tbody>
+            </table>
+        </div>
+
+        <!--Felhasználó szerepkörének módosítása-->
+        <div class="modal fade" id="editRoleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Szerepkör módosítása</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="editRole">Szerepkör</label>
+                            <input type="text" class="form-control" min="0" max="1" id="editRole" name="editRole">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-success" onclick="changeRole()">
+                            <i class="fa-solid fa-check"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="editUsers.js"></script>
+    <script src="logout.js"></script>
+
+</body>
+</html>

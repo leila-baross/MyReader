@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Italianno&display=swap');
+
+body {
+  background-image: url("../images/books.jpg");
+  background-size: 100%;
+  background-repeat: cover;
+}
+
+/* Regisztráció */
+#regist {
+  backdrop-filter: blur(8px) brightness(60%);
+  padding: 30px;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 50px;
+  border: 2px solid white;
+  color: white;
+  margin-bottom: 25px;
+}
+
+/* Regisztráció gomb */
+#reg {
+  width: 70%;
+  color: black;
+  border: black solid 1px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  border-radius: 25px;
+  background-color: grey;
+  margin-top: 15px;
+
+  font-family: 'Caveat', cursive;
+  font-family: 'Italianno', cursive;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+
+#reg:hover {
+  background-color: black;
+  color: white;
+  border: grey solid 1px;
+}
+
+/* Bejelentkezés gomb */
+#log {
+  width: 70%;
+  color: black;
+  border: black solid 1px;
+  margin: 0 auto;
+  border-radius: 25px;
+  background-color: grey;
+
+  font-family: 'Caveat', cursive;
+  font-family: 'Italianno', cursive;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+
+#log:hover {
+  background-color: black;
+  color: white;
+  border: grey solid 1px;
+}
+
+/* Feliratok (email, jelszó, stb.) */
+label,
+input::placeholder {
+  font-weight: 700;
+  font-family: 'Caveat', cursive;
+  font-family: 'Italianno', cursive;
+  font-size: 200%;
+  padding-top: 10px;
+  letter-spacing: 3px;
+}
+
+/* "Regisztráció" felirat */
+h1 {
+  font-weight: 700;
+  font-family: 'Caveat', cursive;
+  font-family: 'Italianno', cursive;
+  font-size: 300%;
+  letter-spacing: 3px;
+  text-align: center;
+  color: white;
+  margin-bottom: -10px;
+}
+
+/* Beviteli mezők */
+.mezo {
+  border: black solid 2px;
+  border-radius: 25px;
+  background-color: grey;
+  color: white;
+  margin-top: -15px;
+}
+
+
+/* Jelszó */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Ebben jelenik meg a jelszó kritériumai (ez a alsó div) */
+#message {
+  display: none;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 45px;
+  font-family: 'Caveat', cursive;
+  font-family: 'Italianno', cursive;
+  font-size: 35px;
+  letter-spacing: 3px;
+  padding-top: 10px;
+  margin-top: 5px;
+
+  backdrop-filter: blur(5px) brightness(60%);
+  padding: 15px;
+  width: 350px;
+  border-radius: 50px;
+  border: white solid 2px;
+}
+
+/* Ebben jelenik meg a jelszó kritériumai (ez a felső div) */
+#doboz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* A jelszó kritériumai */
+#message p {
+  padding: 2px 20%;
+  padding-right: -10px;
+  font-size: 25px;
+  padding-right: 10px;
+}
+
+/* A jelszó felső felirata */
+h3 {
+  color: white;
+  font-weight: 700;
+  letter-spacing: 5px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+/* A jelszó zöldre váltása vagy pirosra színeződése */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -30px;
+  content: "✔";
+}
+
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -30px;
+  content: "✖";
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Ezek a stílusok csak akkor alkalmazódnak, ha a képernyő szélessége kisebb, mint 768px */
+  label,
+  input::placeholder {
+    font-weight: 300;
+    font-size: 150%;
+    padding-top: 5px;
+    letter-spacing: 3px;
+  }
+
+  h1 {
+    font-weight: 300;
+    font-size: 200%;
+    letter-spacing: 3px;
+  }
+}
+
+@media screen and (min-width: 575px) {
+
+  /* Ezek a stílusok csak akkor alkalmazódnak, ha a képernyő szélessége nagyobb vagy egyenlő, mint 575px */
+  label,
+  input::placeholder {
+    font-weight: 300;
+    font-size: 150%;
+    padding-top: 5px;
+    letter-spacing: 3px;
+  }
+
+  h1 {
+    font-weight: 300;
+    font-size: 200%;
+    letter-spacing: 3px;
+  }
+}

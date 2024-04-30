@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Kranky&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Cinzel+Decorative:wght@400;700;900&family=Kranky&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Cinzel+Decorative:wght@400;700;900&family=Kranky&family=Miltonian&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+a.nav-link{
+  font-size: 30px;
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+span{
+   font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.irasok{
+ font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+}
+.gif {
+  width: 100px;
+  height: 100px;
+}
+
+.fulszoveg {
+  text-decoration: none;
+  text-align: center;
+}
+
+hr {
+  height: 10px;
+  color: white;
+}
+
+.top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+}
+
+.fel {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 50px;
+}
+
+body {
+  background-color: #D9D9D9;
+  padding: 25px;
+  color: black;
+  font-size: 25px;
+}
+
+.addNewBookButton {
+  border-style: solid;
+  border-color: white;
+  border-radius: 15px;
+  height: 100%;
+  background-color: #DCCCB6;
+}
+
+.addNewBookButton:hover {
+  background-color: #C09B72;
+}
+
+.gombbutton {
+  border-radius: 15px;
+  height: 100%;
+  float: center;
+  background-color: #C09B72;
+}
+
+.sotet {
+  width: 100%;
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#reszletek {
+  margin-top: 20px;
+}
+
+.sotet {
+  background-color: white;
+  color: black;
+  box-shadow: 5px 5px 5px black;
+}
+
+.sotet:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 5px 5px 5px rgb(181, 180, 180);
+}
+
+.keresgomb {
+  background-color: white;
+  color: black;
+  box-shadow: 5px 5px 5px black;
+}
+
+.keresgomb:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 5px 5px 5px rgb(181, 180, 180);
+}
+
+.keresmezo {
+  background-color: white;
+  color: black;
+  box-shadow: 5px 5px 5px black;
+  width: 100%;
+}
+
+.bekezdes {
+  text-align: justify;
+}
+
+.szegely {
+  background-color: grey;
+  border-radius: 15px;
+  color: white;
+  padding: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  box-shadow: 5px 5px 5px black;
+
+  width: 310px;
+  height: 550px;
+}
+
+.felkover {
+  font-weight: bold;
+}
+
+td {
+  background-color: grey;
+  color: white;
+}
+
+.nav-link {
+  color: white;
+  margin: 10px;
+}
+
+.nav-link:hover {
+  color: black;
+  background-color: white;
+  border-radius: 25px;
+  padding: 8px;
+}
+
+#more {
+  display: none;
+}
+
+.torzs {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.leiras {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.vonal {
+  color: white;
+  border: solid 121213 10px;
+  border-radius: 5px;
+}
+
+.lec {
+  padding-top: 15px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  margin-top: 15px;
+}
+
+.modal-header,
+.modal-footer {
+  background-color: #121213;
+  border: white solid 1px;
+}
+
+.modal-body {
+  background-color: #C09B72;
+  border: white solid 1px;
+  font-weight: 400;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.navbar {
+  margin-bottom: 10px;
+  box-shadow: 10px 10px 10px #AC9C8D;
+  border-radius: 10px;
+}
+
+.mufaj {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 40%;
+}
+
+.barna {
+  background-color: #C09B72;
+}
+
+.kartyak {
+  height: 100%;
+  width: 100%;
+  background-color: #DCCCB6;
+}
+
+.szoveg {
+  text-align: center;
+  margin: auto;
+  padding: 0px 0;
+  padding-top: 15px 0;
+  padding-bottom: 0px 0;
+}
+
+.checked {
+  color: yellow;
+}
+
+.jobb {
+  display: block;
+  margin: auto;
+}
+
+/* DARK MODE */
+#body {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.dark-mode {
+  background-color: #3E3D38;
+  color: white;
+}
+
+body.dark-mode {
+  .barna {
+    background-color: #803E2F;
+  }
+
+  .navbar {
+    box-shadow: 10px 10px 10px #A79986;
+    margin-bottom: 40px;
+  }
+
+  .modal-header,
+  .modal-footer {
+    background-color: #573A22;
+    border: white solid 1px;
+  }
+
+  .vonal {
+    color: #A79986;
+    border: solid #A79986 10px;
+    border-radius: 5px;
+  }
+
+  body {
+    background-color: #3E3D38;
+    padding: 25px;
+    color: black;
+    font-size: 25px;
+  }
+}
+
+/* LIGHT MODE */
+body.light-mode {
+  body {
+    background-color: #D9D9D9;
+    padding: 25px;
+    color: black;
+    font-size: 25px;
+  }
+
+  .barna {
+    background-color: #C09B72;
+  }
+
+  .navbar {
+    box-shadow: 10px 10px 10px #AC9C8D;
+    margin-bottom: 40px;
+  }
+
+  .vonal {
+    color: white;
+    border: solid #C09B72 10px;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  /* Stílusok, amelyek 1058px vagy kisebb képernyőn érvényesek */
+  .top{
+    display: none;
+  }
+}

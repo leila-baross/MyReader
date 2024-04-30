@@ -1,0 +1,28 @@
+/* Modal */
+ .swal2-popup, .swal2-modal, .swal2-icon-success, .swal2-show, .swal2-popup, .swal2-modal, .swal2-icon-error, .swal2-show{
+  background-color: #72383D;
+  border-radius: 30px !important;
+}
+
+/* Szövegek */
+.swal2-title, .swal2-html-container{
+  color: white !important;
+}
+
+.okes{
+  color: #a5dc86;
+ }
+ .nemokes{
+  color: rgb(242, 116, 116);
+ }
+ .war{
+  color: rgb(248, 187, 134);
+ }
+ .bizti{
+  color: rgb(135, 173, 189);
+ }
+
+ /*  Záró gomb */
+  .swal2-confirm, .swal2-styled{
+    background-color: #C09B72 !important;
+  }

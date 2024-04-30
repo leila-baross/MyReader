@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Könyvek</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="reg.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <style>
+        /* Error modal */
+        .swal2-popup, .swal2-modal, .swal2-icon-error, .swal2-show{
+            background-color: grey !important;
+            color: white !important;
+            width: 30% !important;
+            height: auto;
+            border-radius: 25px;
+        }
+
+        /* Error modal "Ok" gombja */
+        .swal2-confirm, .swal2-styled{
+            background-color: red !important;
+        }
+    </style>
+
+</head>
+
+<body class="bg-dark text-white">
+    <div class="container mt-5">
+        <form id="registerForm" class="row">
+            <div class="col-sm-3"></div> <!-- távtartó -->
+            <div class="col-sm-6">
+                <div class="row">
+                <div class="col-sm-3"  id="regist">
+                <div class="mb-2">
+                    <h1>Regisztráció</h1>
+                    <label for="registerEmail" class="form-label">Email cím</label>
+                    <input type="email" class="form-control mezo" id="registerEmail">
+                </div>
+                <div class="mb-2">
+                    <label for="registerNickName" class="form-label">Felhasználónév</label>
+                    <input type="text" class="form-control mezo" id="registerNickName">
+                </div>
+                <div class="mb-2">
+                    <label for="registerPassword" class="form-label">Jelszó</label>
+                    <input type="password" class="form-control mezo" id="registerPassword" placeholder="Jelszó"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                    
+                    <label for="registerPassword2" class="form-label">Jelszó újra</label>
+                    <input type="password" class="form-control mezo" id="registerPassword2" placeholder="Jelszó újra">
+                </div>
+                <div class="row">
+                    <button type="submit" class="btn" id="reg">Regisztráció</button>
+                    <button type="button" onclick="forLogin()"
+                        class="btn" id="log">Bejelentkezés</button>
+                </div>
+            </div>
+            <div class="col-sm-3" id="doboz">
+                <div id="message" class="mb-3">
+                    <h3>A jelszónak a következőket kell tartalmaznia:</h3>
+                    <p id="letter" class="invalid">Egy <b>kisbetű</b></p>
+                    <p id="capital" class="invalid">Egy <b>nagybetű</b></p>
+                    <p id="number" class="invalid">Egy <b>szám</b></p>
+                    <p id="length" class="invalid">Minimum <b>8 karakter</b></p>
+                </div>
+            </div>
+        </div>
+            </div>
+            <div class="col-sm-3"></div> <!-- távtartó -->
+        </form>
+    </div>
+
+    <script src="registration.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+body {
+    background-color: #3E3D38;
+    color: #A79986;
+    display: block;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #72383D;
+    border: #A79986 solid 2px;
+}
+
+.btn {
+    color: #A79986;
+    font-size: 20px;
+}
+
+.btn:hover {
+    color: #3E3D38;
+    font-size: 20px;
+}
+
+#torles {
+    color: rgb(190, 1, 1);
+}
+.modal-header,
+.modal-footer {
+  background-color: #3E3D38;
+  border: #3E3D38 solid 1px;
+}
+
+.modal-body {
+  background-color: #803E2F;
+  border: #3E3D38 solid 1px;
+  font-weight: 400;
+}
+#torles:hover {
+    color: rgb(79, 0, 0);
+}
+
+#szerkesztes {
+    color: rgb(197, 167, 2);
+}
+
+#szerkesztes:hover {
+    color: rgb(172, 172, 2);
+}
+
+.tabla {
+    background-color: #72383D;
+    width: 90%;
+    margin-left: 50px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    overflow: hidden;
+}
+
+th {
+    padding: 10px;
+    border-bottom: #A79986 solid 2px;
+    text-align: center;
+}
+
+tbody {
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}

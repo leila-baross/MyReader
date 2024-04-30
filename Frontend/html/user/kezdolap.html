@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Könyvek</title>
+  <link rel="icon" href="../../../images/Ybin.gif" type="image/x-icon">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="lightmode.css">
+  <script src="darkmode.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <style>
+    /* Modal */
+   .swal2-popup, .swal2-modal, .swal2-icon-success, .swal2-show{
+      background-color: #573A22;
+      border-radius: 30px !important;
+   }
+   /* Title */
+   .okes{
+    color: #a5dc86;
+   }
+   .nemokes{
+    color: rgb(242, 116, 116);
+   }
+  /* Gomb */ 
+  .swal2-confirm, .swal2-styled{
+    background-color: #C09B72 !important;
+  }
+  </style>
+
+</head>
+<body onload="getUserEmail(); userfetchBook()" class="dark-mode" id="body">
+  <div id="userID">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg barna text-white border border-3 border-light" id="menu">
+      <div class="container-fluid">
+        <a class="ms-4 me-2" href="#">
+          <img src="../../images/Ybin.gif" class="gif">
+        </a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Könyvek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="leiras.html">Leírás</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search" id="searchingForm">
+            <input class="form-control me-2" type="search" placeholder="Keresés" aria-label="Search" name="searching">
+            <button class="btn btn-outline-light me-3" type="submit" style="border: none;">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <button class="me-2 btn btn-outline-light" style="border: none;" name="dark_light" onclick="toggleDarkLight()"
+            title="Sötét/Világos mód">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+          </button>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-light" aria-current="page" id="profile">
+                <i class="fa-regular fa-user"></i>
+              </a>
+            </li>
+            <button id="logout" onclick="logout()" class="float-end ms-2 me-2 nav-link">
+              <i class="fa-solid fa-right-from-bracket"></i>
+            </button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Fel gomb -->
+    <div class="fel">
+      <a href="#menu" class="btn btn-outline-danger p-3">
+        <i class="fa-regular fa-hand-point-up"></i>
+      </a>
+    </div>
+
+    <!-- Slides -->
+    <div class="col-sm-2 barna"></div>
+    <div id="demo" class="carousel kep slide img-thumbnail barna col-sm-8 mx-auto myslide border border-3 border-light"
+      data-bs-ride="carousel">
+      <div class="carousel-inner barna" style="width: 100%;height: 100%;">
+        <div class="carousel-item active flex-container">
+          <img src="../../images/almaink.png" class="rounded mx-auto d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img src="../../images/gyermek.png" class="rounded mx-auto d-block" style="width:100%;">
+        </div>
+        <div class="carousel-item">
+          <img src="../../images/sziv.png" class="rounded mx-auto d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img src="../../images/szo.png" class="rounded mx-auto d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img src="../../images/titok.png" class="rounded mx-auto d-block" style="width:100%">
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2"></div>
+
+    <!-- profil kép szerkesztésének offcanvas (oldalról beugró) menüje -->
+    <div class="offcanvas offcanvas-start rounded" id="editProfile" style="max-width: 340px;">
+      <div class="offcanvas-header mx-auto">
+        <h1 class="offcanvas-title">Profil adatok</h1>
+      </div>
+      <div class="offcanvas-body row mx-auto" id="offcanvasBody">
+
+      </div>
+    </div>
+
+    <!-- profil kép szerkesztésének modal ablaka -->
+    <div class="modal fade" id="editProfileImageModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Profilkép szerkesztése</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="editProfileImage">
+              <div class="form-group">
+                <label for="editImage">Kép</label>
+                <input type="file" class="form-control" id="editImage" name="editImage">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button type="button" class="btn btn-outline-success" onclick="editImage()">
+              <i class="fa-solid fa-check"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- username szerkesztésének modal ablaka -->
+    <div class="modal fade" id="editProfileUsernameModal" data-bs-backdrop="static" data-bs-keyboard="false"
+      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Felhasználónév szerkesztése</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="editProfileUsername">
+              <div class="form-group">
+                <label for="editUsername">Felhasználónév</label>
+                <input type="text" class="form-control" id="editUsername" name="editUsername">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button type="button" class="btn btn-outline-success" onclick="editUsername()">
+              <i class="fa-solid fa-check"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- születési dátum szerkesztésének modal ablaka -->
+    <div class="modal fade" id="editProfileBirthdayModal" data-bs-backdrop="static" data-bs-keyboard="false"
+      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Születési dátum szerkesztése</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="editProfileBirthday">
+              <div class="form-group">
+                <label for="editBirthday">Születési dátum</label>
+                <input type="date" class="form-control" id="editBirthday" name="editBirthday">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button type="button" class="btn btn-outline-success" onclick="editBirthday()">
+              <i class="fa-solid fa-check"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jelszó módosításának modal ablaka -->
+    <div class="modal fade" id="editProfilePasswordModal" data-bs-backdrop="static" data-bs-keyboard="false"
+      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Jelszó módosítása</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="editProfilePassword">
+              <div class="form-group">
+                <label for="editPassword" class="form-label">Jelszó</label>
+                <input type="password" class="form-control" id="editPassword" placeholder="Jelszó"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button type="button" class="btn btn-outline-success" onclick="editPassword()">
+              <i class="fa-solid fa-check"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Könyv olvasás -->
+    <div class="row">
+      <div class="lec text-center text-white barna border border-3 border-light">
+        <p class="lecszoveg">Könyvek</p>
+      </div>
+    </div>
+
+    <div id="book-list" class="row">
+      
+    </div>
+  </div>
+
+  <script src="user.js"></script> <!-- Könyv lekérdezése AB -->
+  <script src="frontend.js"></script> <!-- Könyvek közötti keresés -->
+  <script src="profile.js"></script> <!-- Felhasználó profil oldalának módosítása -->
+  <script src="logout.js"></script> <!-- Felhasználó kijelentkeztetése -->
+
+</body>
+</html>

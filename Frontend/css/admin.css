@@ -1,0 +1,1338 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kranky&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Cinzel+Decorative:wght@400;700;900&family=Kranky&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap'); 
+.gif {
+  width: 100px;
+  height: 100px;
+}
+a.nav-link, .lecszoveg{
+ font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.fulszoveg {
+  text-decoration: none;
+  text-align: center;
+}
+
+hr {
+  height: 10px;
+  color: white;
+}
+.fel {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+}
+
+body {
+  background-color: #D9D9D9;
+  padding: 25px;
+  color: #AC9C8D;
+  overflow-x: hidden;
+}
+#addButton{
+  width: 255px;
+  height: 495px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: solid 2px white;
+
+  display: inline-block;
+
+  i{
+    display: block;
+    margin: auto;
+  }
+}
+button.addNewBookButton {
+  background-color: #D1C7BD;
+}
+
+.addNewBookButton:hover {
+  background-color: #AC9C8D;
+  color: black;
+}
+
+.sotet {
+  width: 100%;
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#reszletek {
+  margin-top: 20px;
+}
+
+.sotet {
+  background-color: white;
+  color: black;
+  box-shadow: 5px 5px 5px black;
+}
+
+.sotet:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 5px 5px 5px rgb(181, 180, 180);
+}
+
+.keresgomb {
+  background-color: white;
+  color: black;
+  box-shadow: 5px 5px 5px black;
+}
+
+.keresgomb:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 5px 5px 5px rgb(181, 180, 180);
+}
+
+.keresmezo {
+  background-color: white;
+  color: black;
+  box-shadow: 5px 5px 5px black;
+  width: 100%;
+}
+
+.bekezdes {
+  text-align: justify;
+}
+
+.szegely {
+  background-color: grey;
+  border-radius: 15px;
+  color: white;
+  padding: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  box-shadow: 5px 5px 5px black;
+
+  width: 310px;
+  height: 550px;
+}
+
+.felkover {
+  font-weight: bold;
+}
+
+td {
+  background-color: grey;
+  color: white;
+}
+
+.nav-link {
+  color: white;
+  margin: 10px;
+}
+
+.nav-link:hover {
+  color: black;
+  background-color: white;
+  border-radius: 25px;
+  padding: 8px;
+}
+
+#more {
+  display: none;
+}
+
+.torzs {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.leiras {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.vonal {
+  color: white;
+  border: solid #121213 10px;
+  border-radius: 5px;
+}
+
+.lec {
+  padding-top: 15px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  margin-top: 15px;
+}
+
+.modal-header,
+.modal-footer {
+  background-color: #121213;
+  border: white solid 1px;
+}
+
+label, .modal-title{
+  color: #AC9C8D;
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+input{
+ font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.modal-body {
+  background-color: #C09B72;
+  border: white solid 1px;
+}
+
+#userImage {
+  width: 200px;
+  height: 200px;
+}
+
+h5 {
+  font-size: 15px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.navbar {
+  margin-bottom: 10px;
+  box-shadow: 10px 10px 10px #DCCCB6;
+  border-radius: 10px;
+}
+
+.mufaj {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 40%;
+}
+
+.barna {
+  background-color: #AC9C8D;
+}
+
+.card {
+  height: 490px;
+  width: 75%;
+  background-color: #DCCCB6;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.card-body{
+  height: 150px;
+  align-items: center;
+}
+
+.editbtn,
+.delbtn {
+  height: 40px;
+  width: 40px;
+  padding: 1px 1px 1px 1px;
+  align-items: center;
+}
+.kartyacim{
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  right: 10%;
+  align-items: center;
+  transform: translateY(-50%);
+}
+#addButton{
+  display: flex;
+}
+
+.szoveg {
+  text-align: center;
+  margin: -5px;
+ font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.checked {
+  color: yellow;
+}
+
+.jobb {
+  display: block;
+  margin: auto;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+  border: solid 3px white;
+  border-radius: 5px;
+}
+
+.card-footer {
+  /* Itt felülírjuk a hover állapotot és kikapcsoljuk a bármilyen extra formázást */
+  /* Példa: */
+  padding: 10px;
+  /* Ez kikapcsolja a paddinget */
+  /* vagy */
+  margin: 0;
+  margin-top: 15px;
+  /* Ez kikapcsolja a margin-t */
+  /* vagy bármely más stílus tulajdonság, ami problémát okoz */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rate{
+  font-family: fantasy;
+  font-size: 20px;
+  color: #A79986;
+  margin-top: 19px;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+}
+.card-header {
+  position: relative;
+  display: flex;
+}
+
+.borito {
+  width: 100%;
+  height: 100%;
+  border: solid 3px white;
+  border-radius: 5px;
+  display: block;
+}
+
+.konyvfordulas {
+  display: block;
+  justify-content: center;
+}
+
+
+/* Kártyák fordulása */
+
+/* Adjust styles for flip-card */
+.flip-card {
+  background-color: transparent;
+  height: 200px;
+  perspective: 1000px;
+  /* Add a perspective effect */
+  vertical-align: middle;
+  position: relative;
+  left: 140%;
+}
+
+.flip-card-inner {
+  width: 150px;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border-radius: 5px;
+  border: 2px solid white;
+  position: relative;
+  left: -15px;
+  right: auto;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(-180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 4px;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  width: 150px;
+  border-radius: 5px;
+}
+
+.flip-card-back {
+  background-color: #573A22;
+  color: white;
+  transform: rotateY(-180deg);
+}
+
+/* DARK MODE */
+#body {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.dark-mode {
+  background-color: #3E3D38;
+  color: #3E3D38;
+}
+
+body.dark-mode {
+  .kartyak {
+    background-color: #72383D;
+  }
+
+  #userImage {
+    border: #322D29 3px;
+  }
+
+  .offcanvas {
+    background-color: #3E3D38;
+    color: #A79986;
+    border-right: #72383D solid 3px;
+    border-top-right-radius: 130px;
+    border-bottom-right-radius: 130px;
+  }
+
+  .barna {
+    background-color: #803E2F;
+    /* navbar, idézetek, léc */
+    color: #A79986;
+  }
+
+  .navbar {
+    box-shadow: 10px 10px 10px #A79986;
+    /* navbar, idézetek, léc */
+    margin-bottom: 40px;
+    color: #A79986;
+  }
+
+  .modal-header,
+  .modal-footer {
+    background-color: #3E3D38;
+    border: #3E3D38 solid 1px;
+  }
+
+  .modal-body {
+    background-color: #803E2F;
+    border: #3E3D38 solid 1px;
+    font-weight: 400;
+  }
+
+  .kep {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .vonal {
+    color: white;
+    border: solid #3E3D38 10px;
+    border-radius: 5px;
+  }
+
+  .addNewBookButton {
+    border-style: solid;
+    border-color: #3E3D38;
+    border-radius: 15px;
+    height: 100%;
+    background-color: #72383D;
+  }
+
+  .addNewBookButton:hover {
+    background-color: #803E2F;
+  }
+
+  .gombbutton {
+    border-radius: 15px;
+    height: 100%;
+    background-color: #3E3D38;
+    margin-left: -20px;
+
+  }
+
+  body {
+    background-color: #3E3D38;
+    padding: 25px;
+    color: black;
+    font-size: 25px;
+  }
+
+  .card-body {
+    color: #A79986;
+  }
+}
+.cim, .szerzo{
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.cim{
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 10px;
+}
+
+/* LIGHT MODE */
+body.light-mode {
+  body {
+    background-color: #D9D9D9;
+    padding: 25px;
+    color: black;
+  }
+
+  #userImage {
+    border: #D1C7BD 3px;
+  }
+
+  .offcanvas {
+    background-color: #D9D9D9;
+    color: #C09B72;
+    border-right: #AC9C8D solid 3px;
+    border-top-right-radius: 130px;
+    border-bottom-right-radius: 130px;
+  }
+
+  .flip-card-back {
+    background-color: #C09B72;
+    color: white;
+    transform: rotateY(-180deg);
+  }
+
+  .card-body {
+    color: #EFE9E1;
+  }
+
+  .kartyak {
+    background-color: #AC9C8D;
+  }
+
+  .barna {
+    background-color: #C09B72;
+  }
+
+  .navbar {
+    box-shadow: 10px 10px 10px #AC9C8D;
+    margin-bottom: 40px;
+  }
+
+  .kep {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .modal-header,
+  .modal-footer {
+    background-color: #D9D9D9;
+    border: white solid 1px;
+  }
+
+  .modal-body {
+    background-color: #AC9C8D;
+    border: white solid 1px;
+    font-weight: 400;
+  }
+
+  .vonal {
+    color: white;
+    border: solid #C09B72 10px;
+    border-radius: 5px;
+  }
+
+  .addNewBookButton {
+    border-style: solid;
+    border-color: white;
+    border-radius: 15px;
+    height: 100%;
+    background-color: #AC9C8D;
+  }
+
+  .addNewBookButton:hover {
+    border-style: solid;
+    border-color: white;
+    border-radius: 15px;
+    height: 100%;
+    background-color: #C09B72;
+  }
+
+  .gombbutton {
+    border-radius: 15px;
+    height: 100%;
+    float: center;
+    background-color: #C09B72;
+  }
+}
+
+
+/* Telefonra */
+@media only screen and (max-width: 1629px) {
+  .img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+  } 
+  .cim{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .szerzo{
+    font-size: 20px;
+  }
+  .olvasasgomb{
+    font-size: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+  }
+  .flip-card-inner{
+    position: relative;
+    left: -35px;
+    right: auto;
+  }
+}
+
+@media only screen and (max-width: 1628px) and (min-width: 1580px) {
+  /* Stílusok, amelyek 385px vagy kisebb képernyőn érvényesek */
+  .cim{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .szerzo{
+    font-size: 20px;
+  }
+  .olvasasgomb{
+    font-size: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+  }
+  .flip-card-inner{
+    position: relative;
+    left: -35px;
+    right: auto;
+  }
+}
+
+@media only screen and (max-width: 1579px) and (min-width: 1505px) {
+  /* Stílusok, amelyek 385px vagy kisebb képernyőn érvényesek */
+  .cim{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .szerzo{
+    font-size: 20px;
+  }
+  .olvasasgomb{
+    font-size: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+  }
+  .flip-card-inner{
+    position: relative;
+    left: -45px;
+    right: auto;
+  }
+}
+
+@media only screen and (max-width: 1505px) and (min-width: 1400px) {
+  /* Stílusok, amelyek 385px vagy kisebb képernyőn érvényesek */
+  .cim{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .szerzo{
+    font-size: 20px;
+  }
+  .olvasasgomb{
+    font-size: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+  }
+  .flip-card-inner{
+    position: relative;
+    left: -50px;
+    right: auto;
+  }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1345px) {
+  /* Stílusok, amelyek 385px vagy kisebb képernyőn érvényesek */
+  .cim{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .szerzo{
+    font-size: 20px;
+  }
+  .olvasasgomb{
+    font-size: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+  }
+  .flip-card-inner{
+    position: relative;
+    left: -20px;
+    right: auto;
+  }
+}
+
+@media only screen and (max-width: 1345px) and (min-width: 1200px) {
+  /* Stílusok, amelyek 385px vagy kisebb képernyőn érvényesek */
+  .cim{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .szerzo{
+    font-size: 20px;
+  }
+  .olvasasgomb{
+    font-size: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+  }
+  .flip-card-inner{
+    position: relative;
+    left: -35px;
+    right: auto;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 1030px) {
+  /* Stílusok, amelyek 385px vagy kisebb képernyőn érvényesek */
+  .cim{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .szerzo{
+    font-size: 20px;
+  }
+  .olvasasgomb{
+    font-size: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+  }
+  .flip-card-inner{
+    position: relative;
+    left: -20px;
+    right: auto;
+  }
+}
+
+@media only screen and (max-width: 1030px) and (min-width: 940px) {
+  /* Stílusok, amelyek 385px vagy kisebb képernyőn érvényesek */
+  .cim{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .szerzo{
+    font-size: 20px;
+  }
+  .olvasasgomb{
+    font-size: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+  }
+  .flip-card-inner{
+    position: relative;
+    left: -35px;
+    right: auto;
+  }
+}
+
+@media only screen and (max-width: 940px) and (min-width: 870px) {
+  /* Stílusok, amelyek 385px vagy kisebb képernyőn érvényesek */
+  .cim{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .szerzo{
+    font-size: 20px;
+  }
+  .olvasasgomb{
+    font-size: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+  }
+  .flip-card-inner{
+    position: relative;
+    left: -45px;
+    right: auto;
+  }
+}
+
+@media only screen and (max-width: 870px) and (min-width: 815px) {
+  /* Stílusok, amelyek 385px vagy kisebb képernyőn érvényesek */
+  .cim{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .szerzo{
+    font-size: 20px;
+  }
+  .olvasasgomb{
+    font-size: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+  }
+  .flip-card-inner{
+    position: relative;
+    left: -55px;
+    right: auto;
+  }
+}
+
+@media only screen and (max-width: 815px) and (min-width: 768px) {
+  /* Stílusok, amelyek 385px vagy kisebb képernyőn érvényesek */
+  .cim{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .szerzo{
+    font-size: 20px;
+  }
+  .olvasasgomb{
+    font-size: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+  }
+  .flip-card-inner{
+    position: relative;
+    left: -60px;
+    right: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+  /* Stílusok, amelyek 385px vagy kisebb képernyőn érvényesek */
+  #book-list{
+    #addButton{
+      width: 70%;
+      display: block;
+      margin: auto;
+      height: 475px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: solid 2px white;
+    } 
+  }
+  .cim{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .szerzo{
+    font-size: 20px;
+  }
+  .olvasasgomb{
+    font-size: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+  }
+  .flip-card-inner{
+    position: relative;
+    left: -60px;
+    right: auto;
+  }
+  @media only screen and (max-width: 717px) and (min-width: 512px) {
+    #book-list{
+      #addButton{
+        width: 55%;
+        display: block;
+        margin: auto;
+        height: 475px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: solid 2px white;
+      } 
+    }
+    .cim{
+      font-size: 20px;
+      font-weight: 300;
+    }
+    .szerzo{
+      font-size: 20px;
+    }
+    .olvasasgomb{
+      font-size: 2px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-left: 0px;
+    }
+    .flip-card-inner{
+      position: relative;
+      left: -60px;
+      right: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) and (min-width: 540px) {
+  /* Stílusok, amelyek 385px vagy kisebb képernyőn érvényesek */
+  #book-list{
+    #addButton{
+      width: 70%;
+      display: block;
+      margin: auto;
+      height: 475px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: solid 2px white;
+    } 
+  }
+  .cim{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .szerzo{
+    font-size: 20px;
+  }
+  .olvasasgomb{
+    font-size: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+  }
+  .flip-card-inner{
+    position: relative;
+    left: -155px;
+    right: auto;
+  }
+}
+
+@media only screen and (max-width: 539px) and (min-width: 520px) {
+  /* Stílusok, amelyek 385px vagy kisebb képernyőn érvényesek */
+  #book-list{
+    #addButton{
+      width: 70%;
+      display: block;
+      margin: auto;
+      height: 475px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: solid 2px white;
+    } 
+  }
+  .cim{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .szerzo{
+    font-size: 20px;
+  }
+  .olvasasgomb{
+    font-size: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+  }
+  .flip-card-inner{
+    position: relative;
+    left: -165px;
+    right: auto;
+  }
+}
+
+
+@media only screen and (max-width: 520px) and (min-width: 495px) {
+  /* Stílusok, amelyek 385px vagy kisebb képernyőn érvényesek */
+  #book-list{
+    #addButton{
+      width: 70%;
+      display: block;
+      margin: auto;
+      height: 475px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: solid 2px white;
+    } 
+  }
+  .fel {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    padding: 10px;
+  }
+  .cim{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .szerzo{
+    font-size: 20px;
+  }
+  .olvasasgomb{
+    font-size: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+  }
+  .flip-card-inner{
+    position: relative;
+    left: -175px;
+    right: auto;
+  }
+}
+
+@media only screen and (max-width: 495px) and (min-width: 455px) {
+  /* Stílusok, amelyek 385px vagy kisebb képernyőn érvényesek */
+  #book-list{
+    #addButton{
+      width: 70%;
+      display: block;
+      margin: auto;
+      height: 475px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: solid 2px white;
+    } 
+  }
+  .fel {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    padding: 10px;
+  }
+  .cim{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .szerzo{
+    font-size: 20px;
+  }
+  .olvasasgomb{
+    font-size: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+  }
+  .flip-card-inner{
+    position: relative;
+    left: -185px;
+    right: auto;
+  }
+}
+
+@media only screen and (max-width: 455px) and (min-width: 420px) {
+  /* Stílusok, amelyek 385px vagy kisebb képernyőn érvényesek */
+  #book-list{
+    #addButton{
+      width: 70%;
+      display: block;
+      margin: auto;
+      height: 475px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: solid 2px white;
+    } 
+  }
+  .fel {
+    position: fixed;
+    bottom: 20px;
+    right: 60px;
+    padding: 10px;
+  }
+  .cim{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .szerzo{
+    font-size: 20px;
+  }
+  .olvasasgomb{
+    font-size: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+  }
+  .flip-card-inner{
+    position: relative;
+    left: -195px;
+    right: auto;
+  }
+}
+
+
+@media only screen and (max-width: 420px) and (min-width: 401px) {
+  /* Stílusok, amelyek 385px vagy kisebb képernyőn érvényesek */
+  #book-list{
+    #addButton{
+      width: 70%;
+      display: block;
+      margin: auto;
+      height: 475px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: solid 2px white;
+    } 
+  }
+  .fel {
+    position: fixed;
+    bottom: 20px;
+    right: 70px;
+    padding: 10px;
+  }
+  .cim{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .szerzo{
+    font-size: 20px;
+  }
+  .olvasasgomb{
+    font-size: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+  }
+  .flip-card-inner{
+    position: relative;
+    left: -205px;
+    right: auto;
+  }
+}
+
+@media only screen and (max-width: 414px) and (min-width: 390px) {
+  /* Stílusok, amelyek 385px vagy kisebb képernyőn érvényesek */
+  #book-list{
+    #addButton{
+      width: 70%;
+      display: block;
+      margin: auto;
+      height: 475px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: solid 2px white;
+    } 
+  }
+  .fel {
+    position: fixed;
+    bottom: 20px;
+    right: 70px;
+    padding: 10px;
+  }
+  .cim{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .szerzo{
+    font-size: 20px;
+  }
+  .olvasasgomb{
+    font-size: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+    margin-top: 7px;
+  }
+  .flip-card-inner{
+    position: relative;
+    left: -200px;
+    right: auto;
+  }
+}
+
+@media only screen and (max-width: 390px) and (min-width: 360px) {
+  /* Stílusok, amelyek 385px vagy kisebb képernyőn érvényesek */
+  #book-list{
+    #addButton{
+      width: 70%;
+      display: block;
+      margin: auto;
+      height: 475px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: solid 2px white;
+    } 
+  }
+  .fel {
+    position: fixed;
+    bottom: 20px;
+    right: 70px;
+    padding: 10px;
+  }
+  .cim{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .szerzo{
+    font-size: 20px;
+  }
+  .olvasasgomb{
+    font-size: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+    margin-top: 7px;
+  }
+  .flip-card-inner{
+    position: relative;
+    left: -205px;
+    right: auto;
+  }
+}
+
+
+
+@media only screen and (max-width: 375px) and (min-width: 300px) {
+  /* Stílusok, amelyek 385px vagy kisebb képernyőn érvényesek */
+  #book-list{
+    #addButton{
+      width: 70%;
+      display: block;
+      margin: auto;
+      height: 475px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: solid 2px white;
+    } 
+  }
+  .fel {
+    position: fixed;
+    bottom: 20px;
+    right: 70px;
+    padding: 10px;
+    margin-right: 25px;
+  }
+  .cim{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .szerzo{
+    font-size: 20px;
+  }
+  .olvasasgomb{
+    font-size: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+  }
+  .flip-card-inner{
+    position: relative;
+    left: -210px;
+    right: auto;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .carousel{
+    display: none;
+  } 
+}
+
+@media only screen and (max-width: 360px) and (min-width: 300px) {
+  /* Stílusok, amelyek 385px vagy kisebb képernyőn érvényesek */
+  #book-list{
+    #addButton{
+      width: 70%;
+      display: block;
+      margin: auto;
+      height: 475px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: solid 2px white;
+    } 
+  }
+  .fel {
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    padding: 10px;
+    margin-right: 20px;
+  }
+  .cim{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .szerzo{
+    font-size: 20px;
+  }
+  .olvasasgomb{
+    font-size: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+    margin-top: 7px;
+  }
+  .flip-card-inner{
+    position: relative;
+    left: -215px;
+    right: auto;
+  }
+  
+  .carousel{
+    display: none;
+  } 
+}
+
+@media only screen and (max-width: 280px) {
+  /* Stílusok, amelyek 385px vagy kisebb képernyőn érvényesek */
+  #book-list{
+    #addButton{
+      width: 95%;
+      display: block;
+      margin: auto;
+      height: 475px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: solid 2px white;
+    } 
+  }
+  .fel {
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    padding: 5px;
+    margin-right: 52px;
+  }
+  .cim{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .szerzo{
+    font-size: 20px;
+  }
+  .olvasasgomb{
+    font-size: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+  }
+  .flip-card-inner{
+    position: relative;
+    left: -219px;
+    right: auto;
+  }
+  .kartyak{
+    width: 170px;
+  }
+  .navbar-toggler, .bg-light{
+    display: block;
+    margin: auto;
+  }
+  .carousel{
+    display: none;
+  } 
+}
+
+@media only screen and (max-width: 200px) {
+  /* Stílusok, amelyek 316px vagy kisebb képernyőn érvényesek */
+  body{
+   visibility: hidden;
+  }
+}

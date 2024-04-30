@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Italianno&display=swap');
+
+body {
+  background-image: url("../images/books.jpg");
+  background-size: 100%;
+  background-repeat: cover;
+}
+
+/* Bejelentkezés */
+#login {
+  backdrop-filter: blur(8px) brightness(60%);
+  padding: 30px;
+  max-width: 80%;
+  min-width: 50%;
+  margin: 0 auto;
+  border-radius: 50px;
+  border: 2px solid white;
+  color: white;
+  margin-bottom: 25px;
+  padding-left: 4%;
+  padding-right: 4%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Regisztráció gombja */
+#reg {
+  display: block;
+  width: 50%;
+  color: black;
+  border: black solid 1px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  border-radius: 25px;
+  background-color: grey;
+  margin-top: 15px;
+
+  font-family: 'Caveat', cursive;
+  font-family: 'Italianno', cursive;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+
+#reg:hover {
+  background-color: black;
+  color: white;
+  border: grey solid 1px;
+}
+
+/* Bejelentkezés gombja */
+#log {
+  display: block;
+  width: 50%;
+  color: black;
+  border: black solid 1px;
+  margin: 0 auto;
+  border-radius: 25px;
+  background-color: grey;
+
+  font-family: 'Caveat', cursive;
+  font-family: 'Italianno', cursive;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+
+#log:hover {
+  background-color: black;
+  color: white;
+  border: grey solid 1px;
+}
+
+/* Feliratok (email, jelszó, stb.) */
+label,
+input::placeholder {
+  font-weight: 700;
+  font-family: 'Caveat', cursive;
+  font-family: 'Italianno', cursive;
+  font-size: 200%;
+  padding-top: 10px;
+  letter-spacing: 3px;
+}
+
+/* "Bejelentkezés" felirat */
+h1 {
+  font-weight: 700;
+  font-family: 'Caveat', cursive;
+  font-family: 'Italianno', cursive;
+  font-size: 300%;
+  letter-spacing: 3px;
+  text-align: center;
+  color: white;
+}
+
+/* Beviteli mezők */
+.mezo {
+  border: black solid 2px;
+  border-radius: 25px;
+  background-color: grey;
+  color: white;
+}
+
+@media screen and (max-width: 250px) {
+
+  /* Ezek a stílusok csak akkor alkalmazódnak, ha a képernyő szélessége kisebb, mint 400px */
+  label,
+  input::placeholder {
+    font-weight: 300;
+    font-size: 150%;
+    padding-top: 5px;
+    letter-spacing: 2px;
+  }
+
+  h1 {
+    font-weight: 300;
+    font-size: 200%;
+    letter-spacing: 2px;
+  }
+
+  /* Regisztráció gombja */
+  #reg {
+    display: block;
+    width: 80%;
+    color: black;
+    border: black solid 1px;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    background-color: grey;
+    margin-top: 15px;
+
+    font-family: 'Caveat', cursive;
+    font-family: 'Italianno', cursive;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+
+  /* Bejelentkezés gombja */
+  #log {
+    display: block;
+    width: 80%;
+    color: black;
+    border: black solid 1px;
+    margin: 0 auto;
+    border-radius: 25px;
+    background-color: grey;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 200px) {
+
+  /* Ezek a stílusok csak akkor alkalmazódnak, ha a képernyő szélessége nagyobb vagy egyenlő, mint 270px */
+  label,
+  input::placeholder {
+    font-weight: 300;
+    font-size: 150%;
+    padding-top: 5px;
+    letter-spacing: 2px;
+  }
+
+  h1 {
+    font-weight: 300;
+    font-size: 200%;
+    letter-spacing: 2px;
+  }
+
+  /* Regisztráció gombja */
+  #reg {
+    display: block;
+    width: 80%;
+    color: black;
+    border: black solid 1px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    background-color: grey;
+    margin-top: 15px;
+
+    font-family: 'Caveat', cursive;
+    font-family: 'Italianno', cursive;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+
+  /* Bejelentkezés gombja */
+  #log {
+    display: block;
+    width: 80%;
+    color: black;
+    border: black solid 1px;
+    margin: 0 auto;
+    border-radius: 25px;
+    background-color: grey;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+}
